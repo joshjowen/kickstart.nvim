@@ -1,4 +1,5 @@
 # vim style tmux config
+set-option -g status-position top
 
 # use C-a, since it's on the home row and easier to hit than C-b
 set-option -g prefix C-a
@@ -93,4 +94,4 @@ set -g visual-activity on
 set-option -g default-command "/bin/bash -c 'which reattach-to-user-namespace >/dev/null && exec reattach-to-user-namespace $SHELL -l || exec $SHELL -l'"
 
 # Allow the arrow key to be used immediately after changing windows
-set-option -g repeat-time 200
+set-option -g repeat-time 300
