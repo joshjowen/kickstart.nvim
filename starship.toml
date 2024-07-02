@@ -1,0 +1,50 @@
+format = """\
+[](fg:bright-green)\
+[\uf31b ](bg:bright-green fg:#000000)\
+[](fg:bright-green bg:black)\
+$time\
+[](fg:black bg:blue)\
+$directory\
+[](fg:blue bg:yellow)\
+$git_branch\
+$git_status\
+$git_metrics\
+[](fg:yellow)\
+$character\
+"""
+
+[directory]
+format = "[ \ue613 $path ]($style)"
+style = "fg:black bg:blue"
+
+[git_branch]
+format = '[ $symbol$branch(:$remote_branch) ]($style)'
+symbol = "󰊢  "
+style = "fg:black bg:yellow"
+
+[git_status]
+format = '[$all_status]($style)'
+style = "fg:black bg:yellow"
+
+[git_metrics]
+format = "([+$added]($added_style))[]($added_style)"
+added_style = "fg:black bg:yellow"
+deleted_style = "fg:bright-red bg:235"
+disabled = false
+
+[hg_branch]
+format = "[ $symbol$branch ]($style)"
+symbol = " "
+
+[cmd_duration]
+format = "[  $duration ]($style)"
+style = "fg:bright-white bg:18"
+
+[character]
+success_symbol = ' '
+error_symbol = '[ ](bold bright-red) '
+
+[time]
+disabled = false
+time_format = "%R" # Hour:Minute Format
+format = '[[ 󱑍 $time ](bold bg:black fg:green)]($style)'
