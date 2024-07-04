@@ -13,6 +13,7 @@ osc52 = "CopyPaste"
 [window]
 startup_mode = "Maximized"
 decorations = "None"
+padding = {x = 10, y = 10}
 opacity = 0.8
 blur = true
 
