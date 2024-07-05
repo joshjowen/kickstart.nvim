@@ -12,6 +12,7 @@ $git_metrics\
 [](fg:yellow)\
 $character\
 """
+
 [hostname]
 ssh_only = false
 format = '[ $hostname ]($style)'
@@ -23,7 +24,7 @@ style = "fg:black bg:blue"
 
 [git_branch]
 format = '[ $symbol$branch(:$remote_branch) ]($style)'
-symbol = "󰊢  "
+symbol = " "
 style = "fg:black bg:yellow"
 
 [git_status]
